@@ -1,0 +1,34 @@
+Inicio
+
+    inteiro: valorinformado, contador, acumulador;
+    real: media;
+
+    contador ← 0;
+    acumulador ← 0;
+
+        enquanto(valorinformado > 0) faça
+
+            leia(valorinformado);
+                se((valorinformado mod 2) = 0) e (valorinformado > 0)
+                    entao
+                        inicio
+                            acumulador ← acumulador + valorinformado;
+                            contador ← contador + 1;
+                        fim
+                fimse
+
+        fimenquanto;
+        se(contador > 0) //foi informado algum valor
+            entao
+                inicio
+                    media ← acumulador / contador;
+                    escreva("Media =", media);
+                fim
+            senao
+                escreva("Nenhum valor informado");
+        fimse
+
+
+
+
+Fim
