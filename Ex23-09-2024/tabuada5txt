@@ -1,3 +1,7 @@
+// 1-Elabore um algoritmo que imprima a tabuada do 5 , 
+utilizando as 3 estruturas de repeticao, enquanto, repita e para.
+(um algoritmo para da de estrutura de repeticao).
+
 //enquanto
 Inicio
 
@@ -7,18 +11,104 @@ Inicio
 
     enquanto (contador < 10) faca
 
-        operacao ← n * 5;
+        operacao ← N * 5;
 
         escreva (operacao);
 
         contador ← contador + 1;
-        n ← n + 1;
+        N ← N + 1;
     fimenquanto
 
 Fim
 
 //repita
 
+Inicio
+
+    inteiro: contador, N, operacao;
+    contador <- 0;
+    N <- 1;
+
+    repita
+        operacao ← N * 5;
+
+        escreva (operacao);
+
+        contador ← contador + 1;
+        N ← N + 1;
+    até(contador = 10);
 
 
+Fim
 
+//para
+
+Inicio
+
+    inteiro: contador, N, operacao;
+    N <- 1;
+
+    para contador 1 até 10 passo 1 faça
+        operacao ← N * 5;
+
+        escreva (operacao);
+
+        N ← N + 1;
+    fimpara
+
+Fim
+
+// 2-Modifique o algoritmo das estruturas enquanto e repita para que o usuario informe 
+qual tabuada ele ira calcular, ate que encontre o finalizador -1.
+
+//enquanto
+Inicio
+
+    inteiro: N, contador, operacao;
+    inteiro: valorInformado;
+
+    enquanto(valorInformado <> -1) faça
+        leia(valorInformado);
+
+        se (valorInformado <> -1) então
+            N ← 1;  
+            contador ← 0;  
+            
+            enquanto (contador < 10) faça
+                operacao ← valorInformado * N;
+                escreva(valorInformado, " x ", N, " = ", operacao);
+                
+                contador ← contador + 1;
+                N ← N + 1;
+            fimenquanto
+        fimse
+
+    fimenquanto
+
+Fim
+
+//repita
+
+Inicio
+
+    inteiro: N, contador, operacao;
+    inteiro: valorInformado;
+
+    repita
+    leia(valorInformado);
+
+        se (valorInformado <> -1) então
+            N ← 1; 
+            contador ← 0; 
+
+            repita
+                operacao ← valorInformado * N;
+                escreva(valorInformado, " x ", N, " = ", operacao);
+                
+                contador ← contador + 1;
+                N ← N + 1;
+            até (contador = 10); 
+        fimse
+    até (valorInformado = -1);
+
+Fim
