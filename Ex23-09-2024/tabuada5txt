@@ -1,0 +1,24 @@
+//enquanto
+Inicio
+
+    inteiro: contador, N, operacao;
+    contador ← 0;
+    N ← 1;
+
+    enquanto (contador < 10) faca
+
+        operacao ← n * 5;
+
+        escreva (operacao);
+
+        contador ← contador + 1;
+        n ← n + 1;
+    fimenquanto
+
+Fim
+
+//repita
+
+
+
+
