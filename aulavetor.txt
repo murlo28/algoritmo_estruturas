@@ -1,0 +1,29 @@
+Inicio
+
+    tipo vetor = vetor[1..20] de inteiros;
+    vetor: valores;
+    inteiro: temp;
+    logico: troca;
+
+    para i 1 ate 20 passo 1 faca
+        leia (valores[i]);
+    fimpara;
+
+    troca ← verdadeiro;
+
+    enquanto(troca = verdadeiro) faca
+        para i de 1 ate 19 passo 1 faca
+            
+            se(valores[i] > valores[i + 1]) entao
+                temp ← valores[1];
+                valores[i] ← valores[i + 1];
+                valores[i + 1] ← temp;
+            fimse;     
+        fimpara;
+    fimenquanto
+
+    para x de 1 ate 20 passo 1 faca
+        escreva(valores[x]);
+    fimpara
+
+Fim
